@@ -11,7 +11,7 @@ function App() {
     }
   },[])
   return (
-    <div style={{width:"100vw",height:"100vh"}}>
+    <div style={{width:"100vw",height:"100vh",backgroundColor:`${isD&&"black"}`}}>
 
       <button onClick={showAlert}>alret</button>
     </div>
