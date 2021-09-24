@@ -6,7 +6,7 @@ export function showAlert(){
             (window as any).android.showAlert(true);    
         }
         if(isMobile.ios()){
-            (window as any).webkit.messageHandlers.showAlert.postMessage(true);
+            (window as any).webkit.messageHandlers.showAlert.postMessage("성공");
         }
     }
     else{
