@@ -6,9 +6,9 @@ import { showAlert } from "./mobileMethod";
 function App() {
   const [isD,setIsD]=useState<boolean>(false);
   useEffect(()=>{
-    if(isMobile.ios()){
-      setIsD((window as any).isDark());
-    }
+    // if(isMobile.ios()){
+    //   setIsD((window as any).isDark());
+    // }
   },[])
   return (
     <div style={{width:"100vw",height:"100vh",backgroundColor:`${isD&&"black"}`}}>
